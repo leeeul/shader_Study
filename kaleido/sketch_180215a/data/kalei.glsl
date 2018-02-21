@@ -9,11 +9,10 @@ precision mediump int;
 uniform sampler2D texture;
 uniform vec2 texOffset;
 
-varying vec4 vertColor;//vertColor 는 걍 vec4(1.) 인듯하다
+varying vec4 vertColor;
 varying vec4 vertTexCoord;
 
 uniform float division;
-//uniform sampler2D sprite; // 자 이녀석은 위엣 변수들과 다르게, 사용자가 만들어낸 녀석이야~
 
 void main() {
     vec2 coord = vertTexCoord.xy-vec2(.5);
